@@ -11,7 +11,8 @@ referenced as `#PM-<ID>` will be automatically added to the board.
 3. Install an app into your Github account.
 4. Create a notion integration https://www.notion.so/profile/integrations . Provide access to Insert Comments.
 5. Connect the new integration to a database
-6. Run an autosync service on the server accessible via the webhook.
+6. Add an ID field for your ticket pages
+7. Run an autosync service on the server accessible via the webhook.
 
 ``
 python3 -m notion_pm_autosync.autosync -c config.toml -p 8001
