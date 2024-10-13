@@ -57,7 +57,7 @@ def update_notion_ticket(page_id: str, commit_message: str, commit_url: str) -> 
                 },
                 {
                     "text": {
-                        "content": "url",
+                        "content": f"{commit_url.rsplit('/', 1)[1]}\n",
                         "link": {
                             "url": f"{commit_url}"
                         }
