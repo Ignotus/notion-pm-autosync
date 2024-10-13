@@ -52,21 +52,16 @@ def update_notion_ticket(page_id: str, commit_message: str, commit_url: str) -> 
             "rich_text": [
                 {
                     "text": {
-                        "content": f"New commit: {commit_message}"
+                        "content": f"New commit: {commit_message}\n"
                     }
-                }
-            ]
-        }
-    )
-
-    notion.comments.create(
-        **{
-            "parent": { "page_id": page_id },
-            "rich_text": [
+                },
                 {
                     "text": {
-                        "content": f"{commit_url}"
-                    }
+                        "content": "url",
+                        "link": {
+                            "url": f"{commit_url}"
+                        }
+                    },
                 }
             ]
         }
