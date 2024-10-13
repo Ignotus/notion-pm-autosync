@@ -1,0 +1,6 @@
+[github]
+webhook_secret = "<your_secret>"
+
+[notion]
+api_key = "<your secret>"
+database_id = "<your db id>"

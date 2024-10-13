@@ -1,0 +1,6 @@
+uv
+pydantic
+fastapi
+requests
+uvicorn
+notion_client
